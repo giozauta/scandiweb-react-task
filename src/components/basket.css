@@ -1,0 +1,27 @@
+.littleCartButtons{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.littleCartContainer {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 78px;
+    left: 1043px;
+    padding: 32px 16px 32px 16px;
+    background-color:#FFFFFF;
+    transform-origin:top right;
+    transform: scale(0.6);
+  }
+
+  .basketdropdown:hover .littleCartContainer {
+    display:block;
+    position: absolute;
+    right:0;
+    transform-origin:top right;
+    transform: scale(0.5);
+    padding: 32px 16px 32px 16px;
+  }

@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    object-fit: contain;
+
+  }
+  
+.pdp-container{
+    display: flex;
+    width:90%;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    top:60px;
+
+
+}
+.pdp-container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 25px;
+    
+}
+.littlePicsUl{
+    list-style-type: none;
+}
+.littlePics{
+    margin-bottom: 25px;
+}
+.littlePics:hover{
+    box-shadow: 0px 0px 8px rgb(226, 225, 225);
+}
+.pdp-container>:nth-child(1){
+    display: flex;
+    width: 20%;
+    height: 800px;
+    padding: 2px;
+}
+.pdp-container>:nth-child(2){
+    display: flex;
+    width:40%;
+    height: 800px;
+    padding: 2px;
+}
+.pdp-container>:nth-child(3){
+    display: flex;
+    width: 40%;
+    height: 800px;
+    padding-left:13%;
+
+}
+.littlePics{
+    width: 80px;
+    height:80px;
+    margin: auto;
+}
+.big-pic{
+    width: 100%;
+    height: 100%;
+
+}
+.pdpAttrBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .pdp-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .pdp-container>:nth-child(3){
+        padding: 2px;
+    }
+    .pdp-container>:nth-child(2){
+        padding-left: 2px;
+    }
+    .littlePicsUl{
+        width:300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  .pdpAttrValueBox{
+    border: 0.5px solid gray;
+    width: 64px;
+    height: 48px;
+    text-align: center;
+    display: inline-block;
+    margin: 2px;
+  }
+  .pdpAttrValueBox:hover{
+    box-shadow: 0px 0px 2px black;
+    border: 1px solid greenyellow;
+    
+  }
+  /*for font */
+  .pdp-brandName{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+  }
+.pdp-productName{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+}
+.pdp-value-name,.pdp-productPrice-head{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+}
+.productPrice{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+}
+.addToCartButton{
+    width: 292px;
+    height: 52px;
+    left: 929px;
+    top: 560px;
+    background: #5ECE7B;
+    color:white;
+    border:none;
+    
+}
+.addToCartButton:hover{
+    box-shadow: 0px 0px 2px green;
+}
